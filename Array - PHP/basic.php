@@ -126,3 +126,37 @@ $isFemale = array_filter($userInfo, 'isFemale');
 
 // print_r($isMale);
 // print_r($isFemale);
+
+// count of array
+// in this section i'll use the array from top one.
+$count = count($userInfo);
+// print_r($count);
+
+// array_product 
+$arrayForProduct = [1,2,3,4,5,6];
+$product = array_product($arrayForProduct);
+// print_r($product);
+
+// array_search
+$info = [
+    'fName' => 'yahya', 'lName' => 'mahmud', 'age'=> '23',    
+];
+$search = array_search('mahmud', $info);
+// echo $search;
+// array_search function always return the key's acording to value
+
+
+//array_flip
+$arrayFlip = ['a' => 'apple', 'b' => 'Ball'];
+$flipArray = array_flip($arrayFlip);
+// print_r($flipArray);
+// array_flip always swipe key and value each other.
+
+// array_merge
+$arrMerg1 = [1,2,3,4,5,6];
+$arrMerg2 = ['a','b','c'];
+$arrMerg3 = ['yahya', 'mahmuda', 'fahim'];
+
+$mergeArray = array_merge($arrMerg1, $arrMerg2, $arrMerg3);
+// print_r($mergeArray);
+
