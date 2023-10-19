@@ -34,6 +34,7 @@ function square($n){
 // use the array_map function for squaring the value
 $squareOfOdd = array_map('square', $odd);
 $squareOfEven = array_map('square', $even);
+// if you want to show the result, uncomment the print_r function.
 
-print_r($squareOfOdd);
-print_r($squareOfEven);
+// print_r($squareOfOdd);
+// print_r($squareOfEven);
