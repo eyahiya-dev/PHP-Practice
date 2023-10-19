@@ -11,5 +11,5 @@ function addSequence($startNumber, $endNumebr){
     }
     return $total;
 }
-echo addSequence(2,10);
+echo addSequence(1,10);
 
