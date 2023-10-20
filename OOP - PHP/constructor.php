@@ -21,7 +21,6 @@ class Fruit{
 }
 $apple = new Fruit("apple","green");
 echo $apple->getName(). PHP_EOL;
-
 echo $apple->getColor();
 
 
