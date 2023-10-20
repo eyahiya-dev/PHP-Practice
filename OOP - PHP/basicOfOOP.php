@@ -35,5 +35,8 @@ $carInfo = new Car();
 $carInfo->setName("Toyota");
 $carInfo->setModelDate("2018");
 // show the output
-echo $carInfo->getName() . PHP_EOL;
-echo $carInfo->getModelDate();
+// echo $carInfo->getName() . PHP_EOL;
+// echo $carInfo->getModelDate();
+
+// use PHP instanceof to check
+var_dump($carInfo instanceof Car);
