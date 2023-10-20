@@ -30,7 +30,10 @@ class Car{
 
 // create object of Car
 $carInfo = new Car();
+
+// set data
 $carInfo->setName("Toyota");
 $carInfo->setModelDate("2018");
-echo $carInfo->getName();
+// show the output
+echo $carInfo->getName() . PHP_EOL;
 echo $carInfo->getModelDate();
