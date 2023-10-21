@@ -17,7 +17,23 @@ class Car{
     }
 }
 
-$toyota = new Car('Toyota', 'Prime', 'ofwhite', '2018');
-$mercedes = new Car('Mercedes', 'Lawren12R', 'Aqua Black', '2012');
-echo $toyota->introOfCar() . PHP_EOL . PHP_EOL;
-echo $mercedes->introOfCar();
+class Toyota extends Car{
+    function message(){
+        return "This is one of the best Car Manufacture Company in Asia and well-known all over the world";
+    }
+}
+
+class Bugatti extends Car{
+    function message(){
+        return "the fastest car in the world";
+    }
+}
+
+
+$toyota = new Toyota('Toyota', 'prime', 'white', '2018');
+$bugatti = new Bugatti('Bugatti','Veron', 'Violet & Black','2022');
+echo $toyota->introOfCar().PHP_EOL.PHP_EOL;
+echo $toyota->message(). PHP_EOL . PHP_EOL;
+echo $bugatti->introOfCar().PHP_EOL.PHP_EOL;
+echo $bugatti->message(). PHP_EOL;
+
