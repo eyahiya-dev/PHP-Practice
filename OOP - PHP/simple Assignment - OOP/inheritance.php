@@ -8,3 +8,6 @@ Assignment 2: Inheritance
 * Create objects for both child classes and display their properties.
 
 */
+class Shape{
+    public $color;
+}
