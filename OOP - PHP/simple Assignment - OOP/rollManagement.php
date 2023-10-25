@@ -13,9 +13,7 @@ class User{
     public function getUserInfo(){
         return "Name: " . $this->name . PHP_EOL . "Email: " . $this->email . PHP_EOL ;
     }
-    
 }
-
 class Admin extends User{
     private $roll;
     public function __construct($name, $email, $roll){
@@ -27,7 +25,6 @@ class Admin extends User{
         return "Roll : " . $this->roll;
     }
 }
-
 class Editor extends User{
     private $roll;
     public function __construct($name, $email, $roll){
