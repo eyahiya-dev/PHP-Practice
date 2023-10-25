@@ -39,9 +39,7 @@ class Editor extends User{
     }
 }
 
-
-
-
+// output of roll management
 
 $roll = new Admin('Yahya Mahmud','mahmud@gmail.com','admin');
 $editor = new Editor('Hasan Mahmud','hasan@yahoo.com','editor');
