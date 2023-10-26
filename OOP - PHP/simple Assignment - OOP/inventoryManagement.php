@@ -34,7 +34,6 @@ class Product {
         return $this->quantity;
     }
 }
-
 class Inventory{
     private $products = [];
     public function addProduct(Product $product){
@@ -58,7 +57,6 @@ class Inventory{
             echo "Quantity: " . $product->getQuantity() . "\n\n";
         }
     }
-
 }
 
 $product1 = new Product('Potato', '20' , '300');

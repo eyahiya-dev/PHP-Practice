@@ -7,7 +7,6 @@ class Person{
         $this->name = $name;
         $this->age = $age;
     }
-
     public function introduce(){
         return "Hey! This is {$this->name} and I'am {$this->age} years old";
     }

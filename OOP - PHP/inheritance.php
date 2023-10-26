@@ -29,7 +29,6 @@ class Bugatti extends Car{
     }
 }
 
-
 $toyota = new Toyota('Toyota', 'prime', 'white', '2018');
 $bugatti = new Bugatti('Bugatti','Veron', 'Violet & Black','2022');
 echo $toyota->introOfCar().PHP_EOL.PHP_EOL;

@@ -20,7 +20,6 @@ class Person{
         $this->email = $email;
         $this->age = $age;
     }
-
     // get the data with function
     function getName(){
         return $this->name;

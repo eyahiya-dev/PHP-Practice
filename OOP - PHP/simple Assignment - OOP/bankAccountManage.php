@@ -40,7 +40,6 @@ class BankAccount{
             return "Invalid withdrawal amount. Amount must be greater than ZERO";
         }
     }
-
     // Balance Inqueri Method
     public function balanceInquery(){
         return "Account Number : {$this->accountNumber}, Name : {$this->accountHolderName}, Balance : {$this->balance}";

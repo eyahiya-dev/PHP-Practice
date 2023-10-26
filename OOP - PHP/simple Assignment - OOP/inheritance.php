@@ -32,8 +32,7 @@ class Circle extends Shape {
         parent::__construct($color);
         $this->radius = $radius;
         $this->calculateArea();
-    }
-    
+    }    
     private function calculateArea() {
         $this->area = pi() * pow($this->radius, 2);
     }
