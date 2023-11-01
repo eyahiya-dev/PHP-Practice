@@ -26,10 +26,20 @@ Example of JSON.
 
 // JSON in PHP, Json containd object , this object is called associative array in PHP
 
-$associtiveArray = [
-    ["fName" => "Yahya","lName"=> "mahmud","email"=> "yahya@gmail.com"],
-    ["fName" => "Mahmuda","lName"=> "akter","email"=> "mahmuda@gmail.com"],
-    ["fName" => "Nazma","lName"=> "begum","email"=> "nazma@gmail.com"],
-];
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $info = [
+        "userName"=> "yahya mahmud",
+        "email"=> "yahya@gmail.com",
+        "age"=> "23",
+    ];
+    
+    $jsonEncode = json_encode($info);
+    echo "success";
 
-// this is a associative array
+}
+
+if($_SERVER["REQUEST_METHOD"] == "GET"){
+    $jsonMain = file_get_contents("php://input");
+    $jsonDecode = json_decode($jsonMain,true);
+    print_r($jsonDecode);
+}
