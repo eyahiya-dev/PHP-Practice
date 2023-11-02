@@ -8,7 +8,3 @@ $inputrole = "admin";
 $name = $_SESSION["userName"] = $inputName;
 $email = $_SESSION["email"] = $inputemail;
 $role = $_SESSION["role"] = $inputrole;
-
-echo $name;
-echo $email;
-echo $role;
