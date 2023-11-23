@@ -11,4 +11,5 @@ function isEven($n){
     }
 }
 $evenNumebrs = array_filter($numbers, "isEven");
+// print the value
 print_r($evenNumebrs);
